@@ -1,13 +1,29 @@
-<!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
-  </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
-</view>
+<!-- 注释部分 -->
+<swiper class="box" indicator-dots indicator-color="rgba(255,255,255,0.6)" indicator-active-color="#fff" autoplay circular>
+  <swiper-item>
+    <navigator url="">
+      <image src="../../static/uploads/slide_1.jpg"></image>
+    </navigator>
+  </swiper-item>
+  <swiper-item>
+    <navigator url="">
+      <image src="../../static/uploads/slide_2.jpg"></image>
+    </navigator>
+  </swiper-item>
+  <swiper-item>
+    <navigator url="">
+      <image src="../../static/uploads/slide_3.jpg"></image>
+    </navigator>
+  </swiper-item>
+  <swiper-item>
+    <navigator url="">
+      <image src="../../static/uploads/slide_4.jpg"></image>
+    </navigator>
+  </swiper-item>
+  <swiper-item>
+    <navigator url="">
+      <image src="../../static/uploads/slide_5.jpg"></image>
+    </navigator>
+  </swiper-item>
+
+</swiper>
